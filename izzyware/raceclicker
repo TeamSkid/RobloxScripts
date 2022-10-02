@@ -37,7 +37,7 @@ function aclick()
 end
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Race Clicker!", "Ocean")
+local Window = Library.CreateLib("Race Clicker!", "Sentinel")
  
 local Farming = Window:NewTab("Main")
 local Credits = Window:NewTab("Credits")
