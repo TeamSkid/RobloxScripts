@@ -37,30 +37,25 @@ function aclick()
 end
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Race Clicker!", "Sentinel")
+local Window = Library.CreateLib("izzyware | Race Clicker", "Ocean")
  
 local Farming = Window:NewTab("Main")
 local Credits = Window:NewTab("Credits")
 local AutoFarm = Farming:NewSection("Main")
-local Credit = Credits:NewSection("Credit:")
-local Discord = Credits:NewSection("Discord")
+local Credit = Credits:NewSection("Credits")
 
-AutoFarm:NewToggle("Auto Click", "Auto CLick for you", function(bool)
+AutoFarm:NewToggle("Auto Click", "Auto CLick for you (by allahnotleaks)", function(bool)
     getgenv().aclick = bool
     if bool then
         aclick()
     end
 end)
 
-AutoFarm:NewToggle("Auto Win", "Auto win", function(bool)
+AutoFarm:NewToggle("Auto Win", "Auto Wins For You (by Iz7)", function(bool)
     getgenv().awin = bool
     if bool then
         awin()
     end
 end)
 
-Credit:NewLabel("Made By Bebedi#9960")
- 
-Discord:NewButton("Copy Discord Link", "Copy the Arcane Discord URL", function()
-    setclipboard("https://discord.gg/ArKmNgwXHV")
-end)
+Credit:NewLabel("Made By Iz7#1995 and allahnotleaks#6969")
