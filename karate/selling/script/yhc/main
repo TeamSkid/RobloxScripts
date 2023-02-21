@@ -660,7 +660,7 @@ local function Initiate()
 					)
 					CmdSettings["CustomDrop"] = true
 					coroutine.wrap(function()
-						repeat wait(2.5) 	
+						repeat wait(0.5) 	
 							game.ReplicatedStorage.MainEvent:FireServer(
 								"DropMoney",
 								10000
